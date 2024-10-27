@@ -503,8 +503,8 @@ public class Program
         for (;;)
         {
             input = Console.ReadLine();
-            double.TryParse(input, out weight);
             if (input == "stop") break;
+            double.TryParse(input, out weight);
             else if (weight < 30) answer += 200;
         }
         answer = answer / 1000;
