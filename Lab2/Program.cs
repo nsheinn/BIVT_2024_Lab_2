@@ -505,9 +505,9 @@ public class Program
             input = Console.ReadLine();
             if (input == "stop") break;
             double.TryParse(input, out weight);
-            else if (weight < 30) answer += 200;
+            if ((weight < 30) & (weight > 0)) answer += 200;
         }
-        answer = answer / 1000;
+        answer = answer / 1000; 
         // end
         Console.WriteLine(answer);
         // for test input in console: 27.5, 32.5, 30, 22.3, 26.8, 36.6, 30, 29.9, 20.1, 28.5
